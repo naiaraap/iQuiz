@@ -28,6 +28,9 @@
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                     <color key="baseBackgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="pressStartQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gTb-Zn-aLs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +44,9 @@
                             <constraint firstItem="Ft2-0H-zeL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yrx-Kj-bpW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="startQuizButton" destination="Ft2-0H-zeL" id="fM7-t1-TQ7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

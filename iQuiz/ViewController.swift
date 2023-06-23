@@ -8,12 +8,23 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  //MARK - IBOutlets
+  @IBOutlet weak var startQuizButton: UIButton!
+  
+  //MARK - View Lifecycle
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    setLayout()
   }
-
-
+  
+  func setLayout() {
+    startQuizButton.layer.cornerRadius = 12
+  }
+  
+  //MARK - IBActions
+  @IBAction func pressStartQuizButton(_ sender: Any) {
+    print("Start Quiz Button Pressed")
+  }
+  
 }
 
