@@ -10,10 +10,10 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    // Override point for customization after application launch.
+    
+    UIView.appearance().backgroundColor = UIColor(red: 82/255, green: 30/255, blue: 194/255, alpha: 1.0)
+    
     return true
   }
 
