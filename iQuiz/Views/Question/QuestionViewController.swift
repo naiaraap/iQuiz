@@ -18,18 +18,10 @@ class QuestionViewController: UIViewController {
     navigationItem.hidesBackButton = true
     
     let titleLabel = QuestionTitleLabel()
-    setQuestion(titleLabel, questions[questionNumber])
-    //titleLabel.text = "Título da questão"
+    titleLabel.setQuestionTitle(questions[questionNumber])
+    
     view.addSubview(titleLabel)
     setTitleConstraints(titleLabel)
-    
-    
-//    titleLabel.translatesAutoresizingMaskIntoConstraints = false
-//    NSLayoutConstraint.activate([
-//      titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 112),
-//      titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 64),
-//      titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -64)
-//    ])
     
     let stackView = UIStackView()
     stackView.axis = .vertical
@@ -45,10 +37,10 @@ class QuestionViewController: UIViewController {
     ])
     var buttonList = [ButtonLayoutModel]()
     
-    for index in 1...3 {
+    for index in 0...2 {
       let button = ButtonLayoutModel(type: .system)
-      button.setTitle("Resposta \(index)", for: .normal)
       button.tag = index
+      button.setButtonText(questions[questionNumber])
       button.titleLabel?.font = UIFont.systemFont(ofSize: 22)
       
       stackView.addArrangedSubview(button)
@@ -59,7 +51,12 @@ class QuestionViewController: UIViewController {
   }
   
   @objc func answerButtonTapped(_ sender: UIButton) {
-    print("Button tapped: \(sender.tag)")
+    let userGotRightAnswer = sender.tag == questions[questionNumber].correctAnswer
+    
+    if userGotRightAnswer {
+      score += 1
+      print("Score: \(score)")
+    }
   }
   
   func setTitleConstraints(_ titleLabel: QuestionTitleLabel) {
@@ -70,11 +67,6 @@ class QuestionViewController: UIViewController {
       titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 64),
       titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -64)
     ])
-  }
-  
-  func setQuestion(_ titleLabel: QuestionTitleLabel, _ question: Question) {
-    print("Question: \(question.title)")
-    titleLabel.text = question.title
   }
 
 }

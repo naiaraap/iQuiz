@@ -29,4 +29,8 @@ class ButtonLayoutModel: UIButton {
     
     self.heightAnchor.constraint(equalToConstant: 62).isActive = true
     }
+  
+  func setButtonText(_ question: Question? = nil) {
+    setTitle(question?.answers[self.tag] ?? "Título da questão", for: .normal)
+  }
 }

@@ -20,6 +20,7 @@ class QuestionTitleLabel: UILabel {
   
   private func setupLabel() {
     text = "Título da questão"
+    
     textColor = UIColor.white
     self.numberOfLines = 0
     self.textAlignment = .center
@@ -31,5 +32,9 @@ class QuestionTitleLabel: UILabel {
     }
     
     translatesAutoresizingMaskIntoConstraints = false
+  }
+  
+  func setQuestionTitle(_ question: Question? = nil) {
+    text = question?.title ?? "Título da questão"
   }
 }
