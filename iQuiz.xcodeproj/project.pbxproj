@@ -50,6 +50,7 @@
 		4C8CB59A2A461D20009E289C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4C8CB5AB2A4B1A09009E289C /* ResultsViewController.swift */,
 				4C8CB59C2A461D7B009E289C /* Question */,
 				4C9DDA522A44DD7D005F9B55 /* ViewController.swift */,
 				4C9DDA542A44DD7D005F9B55 /* Main.storyboard */,
@@ -109,7 +110,6 @@
 				4C9DDA572A44DD7F005F9B55 /* Assets.xcassets */,
 				4C9DDA592A44DD7F005F9B55 /* LaunchScreen.storyboard */,
 				4C9DDA5C2A44DD7F005F9B55 /* Info.plist */,
-				4C8CB5AB2A4B1A09009E289C /* ResultsViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
