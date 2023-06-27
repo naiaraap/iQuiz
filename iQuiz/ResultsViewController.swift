@@ -9,6 +9,9 @@ import UIKit
 
 class ResultsViewController: UIViewController {
   
+  //MARK - Attributes
+  var score: Int?
+  
   //MARK - IBOutlets
   @IBOutlet weak var scoreLabel: UILabel!
   @IBOutlet weak var percentLabel: UILabel!
@@ -16,12 +19,13 @@ class ResultsViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setButtonLayout()
     }
     
   func setButtonLayout() {
+    navigationItem.hidesBackButton = true
     restartQuizButton.layer.cornerRadius = 16
+    restartQuizButton.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
   }
   
     /*

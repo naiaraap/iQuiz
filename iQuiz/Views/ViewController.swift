@@ -18,7 +18,9 @@ class ViewController: UIViewController {
   }
   
   func setLayout() {
+    navigationItem.hidesBackButton = true
     startQuizButton.layer.cornerRadius = 12
+    startQuizButton.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
   }
   
   //MARK - IBActions
