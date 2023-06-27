@@ -11,6 +11,7 @@
 		4C8CB5A52A4623BA009E289C /* ButtonLayoutModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB5A42A4623BA009E289C /* ButtonLayoutModel.swift */; };
 		4C8CB5A72A462A67009E289C /* QuestionTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB5A62A462A67009E289C /* QuestionTitleLabel.swift */; };
 		4C8CB5AA2A4A0A82009E289C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB5A92A4A0A82009E289C /* Question.swift */; };
+		4C8CB5AC2A4B1A09009E289C /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8CB5AB2A4B1A09009E289C /* ResultsViewController.swift */; };
 		4C9DDA4F2A44DD7D005F9B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9DDA4E2A44DD7D005F9B55 /* AppDelegate.swift */; };
 		4C9DDA512A44DD7D005F9B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9DDA502A44DD7D005F9B55 /* SceneDelegate.swift */; };
 		4C9DDA532A44DD7D005F9B55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C9DDA522A44DD7D005F9B55 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		4C8CB5A42A4623BA009E289C /* ButtonLayoutModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLayoutModel.swift; sourceTree = "<group>"; };
 		4C8CB5A62A462A67009E289C /* QuestionTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionTitleLabel.swift; sourceTree = "<group>"; };
 		4C8CB5A92A4A0A82009E289C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4C8CB5AB2A4B1A09009E289C /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		4C9DDA4B2A44DD7D005F9B55 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C9DDA4E2A44DD7D005F9B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4C9DDA502A44DD7D005F9B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				4C9DDA572A44DD7F005F9B55 /* Assets.xcassets */,
 				4C9DDA592A44DD7F005F9B55 /* LaunchScreen.storyboard */,
 				4C9DDA5C2A44DD7F005F9B55 /* Info.plist */,
+				4C8CB5AB2A4B1A09009E289C /* ResultsViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				4C9DDA512A44DD7D005F9B55 /* SceneDelegate.swift in Sources */,
 				4C8CB5AA2A4A0A82009E289C /* Question.swift in Sources */,
 				4C8CB5A72A462A67009E289C /* QuestionTitleLabel.swift in Sources */,
+				4C8CB5AC2A4B1A09009E289C /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

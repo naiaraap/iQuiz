@@ -71,7 +71,7 @@ class QuestionViewController: UIViewController {
     if questionNumber < questions.count - 1 {
       questionNumber += 1
       Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(setQuestion), userInfo: nil, repeats: false)
-      //setQuestion()
+
 //      let resultViewController = ResultViewController()
 //      resultViewController.score = score
 //      navigationController?.pushViewController(resultViewController, animated: true)
