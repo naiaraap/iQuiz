@@ -8,14 +8,22 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+  
+  //MARK - IBOutlets
+  @IBOutlet weak var scoreLabel: UILabel!
+  @IBOutlet weak var percentLabel: UILabel!
+  @IBOutlet weak var restartQuizButton: UIButton!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        setButtonLayout()
     }
     
-
+  func setButtonLayout() {
+    restartQuizButton.layer.cornerRadius = 16
+  }
+  
     /*
     // MARK: - Navigation
 
